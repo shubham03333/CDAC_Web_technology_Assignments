@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "e5bd2afe-b470-4275-80ad-7056539aff30",
+		"name": "Internal Assesment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "Add student",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/student/fetch_by_birthyear/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"student",
+								"fetch_by_birthyear",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete student",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "Search studentBy rollno",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "Update students class and division",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\"=\"sanky\",\r\n    \"s_class\": \"DBDA\",\r\n    \"division\": \"c\",\r\n    \"dateofbirth\":\"1998-08-06\",\r\n    \"parent_mobile_no\":\"9823159425\",\r\n}"
+						},
+						"url": {
+							"raw": "{{URL}}/student/update_student/103",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"student",
+								"update_student",
+								"103"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Student by class",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "Find students by birth year",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "http://localhost:4000"
+		}
+	]
+}
